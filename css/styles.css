@@ -29,7 +29,7 @@
   font-size: 24px;
 }
 
-text,
+.text,
 p {
   font-size: 16;
   color: rgba(255, 255, 255, 0.5);
@@ -193,24 +193,96 @@ main {
   background-color: rgba(6, 255, 210, 0.5);
   background-blend-mode: multiply;
 }
-
 .img2 {
-  grid-column: span 3; /* Takes 3 columns (larger image in the middle) */
+  grid-column: span 3;
 }
-
 .img3 {
-  grid-column: span 1; /* Takes 1 column space */
+  grid-column: span 1;
 }
-
-/* Second row */
 .img4 {
-  grid-column: span 2; /* Takes 1 column space */
+  grid-column: span 2;
 }
-
 .img5 {
-  grid-column: span 1; /* Takes 1 column space */
+  grid-column: span 1;
+}
+.img6 {
+  grid-column: span 2;
 }
 
-.img6 {
-  grid-column: span 2; /* Takes 3 column space */
+#bmi {
+  margin: auto;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+}
+#bmi-content {
+  width: 100%;
+  background-color: rgb(34, 34, 34);
+  /* background-color: white; */
+}
+#bmi-content-container {
+  max-width: 1200px;
+  margin: 40px auto;
+  justify-content: space-between;
+  gap: 20px;
+}
+#bmi-chart {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  row-gap: 80px;
+}
+
+table {
+  width: 70%;
+  height: 100%;
+  border-collapse: collapse; /* Ensures no gaps between borders */
+  /* border: 1px solid black; */
+}
+
+th,
+td {
+  font-size: 16;
+  border: 1px solid rgba(255, 255, 255, 0.5); /* Sets border for table cells */
+  padding: 8px; /* Adds padding inside cells */
+  text-align: center; /* Centers text in cells */
+}
+td {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+#bmi-calculator {
+  width: 50%;
+  align-items: start;
+  row-gap: 10px;
+  text-align: left;
+}
+
+form input,
+#sex {
+  width: 35%;
+  padding: 10px 20px;
+  margin: 12px 12px 12px 0px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: none;
+}
+#sex {
+  width: 42%;
+}
+
+#activity-factor {
+  width: 87%;
+  padding: 10px 20px;
+  margin: 12px 12px 12px 0px;
+  color: rgba(255, 255, 255, 0.6);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  border: none;
 }
