@@ -388,7 +388,7 @@ li {
 
 /* ------------------------------------------------------------- */
 /* Responsive Design for Mobile Devices */
-@media (max-width: 768px) {
+@media (max-width: 576px) {
   .logo {
     font-size: 28px;
     color: #e6533c;
