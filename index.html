@@ -22,6 +22,18 @@
             <li>Contact</li>
             <li>About</li>
           </ul>
+          <div id="menu-icon">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 50 50"
+              width="50px"
+              height="50px"
+            >
+              <path
+                d="M 0 9 L 0 11 L 50 11 L 50 9 Z M 0 24 L 0 26 L 50 26 L 50 24 Z M 0 39 L 0 41 L 50 41 L 50 39 Z"
+              />
+            </svg>
+          </div>
         </menu>
       </nav>
       <!-- banner  -->
@@ -86,7 +98,7 @@
 
       <!-- Run an Extra Mile Easily -->
       <section id="run-extra-mile">
-        <div class="flex-row">
+        <div id="run-extra-mile-container" class="flex-row">
           <!-- contents -->
           <div id="run-extra-mile-content" class="flex-col">
             <h1>Run an Extra Mile Easily</h1>
@@ -161,30 +173,32 @@
             <!-- calculate your bmi  -->
             <div id="bmi-calculator" class="flex-col">
               <h2 class="sub-title">Calculate Your BMI</h2>
-              <p style="text-align: left">
+              <p>
                 We believe fitness should be accessible to everyone, everywhere,
                 regardless of income or access to a gym.
               </p>
-              <form action="">
-                <input type="number" placeholder="Height (cm)" />
-                <input type="number" placeholder="Weight (kg)" />
-                <input type="number" placeholder="Age" />
-                <select name="sex" id="sex">
-                  <option>Sex</option>
-                  <option value="male">Male</option>
-                  <option value="female">Female</option>
-                </select>
-
-                <div>
-                  <!-- <label for="activity-factor">Select an Activity Factor</label> -->
-                  <select name="activity-factor" id="activity-factor">
-                    <option>Select an Activity Factor</option>
-                    <option value="low">Low Activity</option>
-                    <option value="medium">Moderate Activity</option>
-                    <option value="high">High Activity</option>
+              <div id="bmi-form">
+                <form action="">
+                  <input type="number" placeholder="Height (cm)" />
+                  <input type="number" placeholder="Weight (kg)" />
+                  <input type="number" placeholder="Age" />
+                  <select name="sex" id="sex">
+                    <option>Sex</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
                   </select>
-                </div>
-              </form>
+
+                  <div>
+                    <!-- <label for="activity-factor">Select an Activity Factor</label> -->
+                    <select name="activity-factor" id="activity-factor">
+                      <option>Select an Activity Factor</option>
+                      <option value="low">Low Activity</option>
+                      <option value="medium">Moderate Activity</option>
+                      <option value="high">High Activity</option>
+                    </select>
+                  </div>
+                </form>
+              </div>
               <button class="btn-primary">Calculate</button>
             </div>
           </div>
