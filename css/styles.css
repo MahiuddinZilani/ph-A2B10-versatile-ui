@@ -359,6 +359,34 @@ li {
   font-size: 20px;
 }
 
+.special-card-1 {
+  padding: 8px;
+  position: absolute;
+  width: 180px;
+  height: 90px;
+  left: 1107px;
+  top: 260px;
+
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+}
+.special-card-2 {
+  position: absolute;
+  width: 180px;
+  height: 90px;
+  left: 764px;
+  top: 556px;
+
+  box-sizing: border-box;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  backdrop-filter: blur(20px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
 /* ------------------------------------------------------------- */
 /* Responsive Design for Mobile Devices */
 @media (max-width: 768px) {
@@ -473,5 +501,20 @@ li {
   }
   #footer-logo {
     width: 70%;
+  }
+  .special-card-1 {
+    padding: 8px;
+    position: absolute;
+    width: 120px;
+    height: 70px;
+    left: 60%;
+    top: 50%;
+  }
+  .special-card-2 {
+    position: absolute;
+    width: 120px;
+    height: 70px;
+    left: 5%;
+    top: 556px;
   }
 }
