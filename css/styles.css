@@ -2,6 +2,7 @@
   margin: 0px;
   padding: 0px;
   color: white;
+  /* background: black; */
 }
 .flex-row {
   display: flex;
@@ -34,7 +35,6 @@ p {
   font-size: 16;
   color: rgba(255, 255, 255, 0.5);
   text-wrap: balance;
-  text-align: center;
 }
 
 .btn-primary {
@@ -285,4 +285,61 @@ form input,
   background-color: rgba(255, 255, 255, 0.1);
   border-radius: 8px;
   border: none;
+}
+#our-team {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 40px auto;
+  justify-content: space-between;
+  gap: 20px;
+}
+#our-team-grid {
+  display: grid;
+  padding: 16px;
+  grid-template-columns: repeat(3, 1fr);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.1);
+  gap: 16px;
+}
+
+.team-grid-item {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  grid-column: span 1;
+  border-radius: 18px;
+}
+
+footer {
+  background: rgba(12, 12, 12, 0.9);
+  /* background: black; */
+}
+
+#footer-container {
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 60px 0px;
+  width: 100%;
+  justify-content: space-evenly;
+  text-wrap: balance;
+}
+#footer-content {
+  display: flex;
+  margin: 32px auto;
+  justify-content: space-between;
+}
+#footer-logo {
+  width: 30%;
+}
+#footer-link {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+}
+#footer-link ul,
+li {
+  list-style-type: none;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 16px 0px;
+  font-size: 20px;
 }
