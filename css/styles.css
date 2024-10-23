@@ -3,6 +3,17 @@
   padding: 0px;
   color: white;
 }
+.flex-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .logo {
   font-size: 32px;
@@ -12,7 +23,18 @@
 }
 
 .title {
+  font-size: 48px;
+}
+.sub-title {
   font-size: 24px;
+}
+
+text,
+p {
+  font-size: 16;
+  color: rgba(255, 255, 255, 0.5);
+  text-wrap: balance;
+  text-align: center;
 }
 
 .btn-primary {
@@ -94,4 +116,31 @@ header menu ul li {
 
 main {
   background: black;
+}
+
+#change-habits {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 40px;
+}
+
+#change-habits-card-container {
+  justify-content: space-between;
+  gap: 50px;
+}
+.change-habits-card {
+  row-gap: 16px;
+}
+
+.change-habits-card img {
+  /* width: 100px;
+  height: 100px; */
+  width: 200px;
+  border-radius: 50%;
+  border: 1px solid white;
 }
