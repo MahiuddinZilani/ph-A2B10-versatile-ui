@@ -144,3 +144,73 @@ main {
   border-radius: 50%;
   border: 1px solid white;
 }
+
+#run-extra-mile {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 12px;
+  width: full;
+  background-color: rgb(34, 34, 34);
+}
+#run-extra-mile-content {
+  /* width: 50%; */
+}
+#run-extra-mile-img-container {
+  width: 50%;
+}
+#run-extra-mile-img {
+  width: 70%;
+  height: 250px;
+  background-image: url("../images/run.jpg");
+  background-clip: content-box;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 12px;
+}
+
+#training-exercise {
+  max-width: 1200px;
+  margin: auto;
+  padding: 40px 0px;
+}
+
+#training-exercise-img-container {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr); /* 5 equal-width columns */
+  /* grid-gap: 10px; */
+}
+
+.grid-item {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.img1 {
+  grid-column: span 1; /* Takes 1 column space */
+  background-color: rgba(6, 255, 210, 0.5);
+  background-blend-mode: multiply;
+}
+
+.img2 {
+  grid-column: span 3; /* Takes 3 columns (larger image in the middle) */
+}
+
+.img3 {
+  grid-column: span 1; /* Takes 1 column space */
+}
+
+/* Second row */
+.img4 {
+  grid-column: span 2; /* Takes 1 column space */
+}
+
+.img5 {
+  grid-column: span 1; /* Takes 1 column space */
+}
+
+.img6 {
+  grid-column: span 2; /* Takes 3 column space */
+}
